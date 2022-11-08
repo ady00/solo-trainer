@@ -1,0 +1,29 @@
+@import "../scss/variables";
+@import "../scss/keyframes";
+
+html {
+  background: #121212;
+  color: #fff;
+  font-size: 13px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.board-container {
+  padding: 0 40px;
+  margin: 40px auto;
+  user-select: none;
+  max-width: 1400px;
+}
+
+.board-container__in {
+  margin: auto;
+}
+
+.mobile-menu-icon {
+  &.show-mic {
+    @include pulse(1s);
+  }
+}
